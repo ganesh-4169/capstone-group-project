@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Sign up</title>
+</head>
+<script src="https://kit.fontawesome.com/41c529dfe7.js" crossorigin="anonymous"></script>
+<style>
+   body{
+    background-color: beige;
+    
+    background-image: url('https://images.unsplash.com/photo-1617878227827-8360231f7f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b3JwaGFuYWdlfGVufDB8fDB8fHww&w=1000&q=80');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.one{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+.two{
+    position: relative;
+    width: 400px;
+    heigth: 550px;
+    border: 2px solid rgba(255,255,2550.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two h1{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+.two .three{
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid red;
+}
+.two .three input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: white;
+    font-size: 16px;
+}
+i{
+    position: relative;
+    color: rgb(128, 41, 195);
+    top: 13px;
+    left: 300px;
+    
+}
+.seven input{
+    color: rgb(29, 31, 157);
+    background: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0,0,0,.5);
+}
+#result{
+color: red;
+font-weight: 600;
+position: relative;
+top: 25px;
+}
+::placeholder{
+    color: white;
+}
+</style>
+<body>
+<div class="one">
+    <div class="two">
+    <form method="post" action="/signupsubmit">
+    <h1> Sign up page </h1>
+    <div class="three " >
+        <i class="fa-solid fa-user"></i>
+       <input  id="a" type="text"  name="username" placeholder="username">
+    </div>
+    <div class="three">
+        <i class="fa-solid fa-envelope"></i>
+        <input  id="usemail" type="Email"  name="email" placeholder="email">
+    </div>
+    <div  id="uspassword" class="three">
+        <i class="fa-solid fa-lock"></i>
+        <input  type="password"  name="password" placeholder="password">
+    </div>
+    <div class="seven">
+        <input type="submit"  value="Register">
+    </div>
+     </form>
+    </div>
+</div>
+<script src="stylesheet.css"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ganesh</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        .nav-img{
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 14vw;
+    
+}
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS3o2Hds2OJoEVzKKSqIcPcJxKItlHHzwRl-CY_5BR6uDPzq8zK0XRIIIcqanc74ETvoo&usqp=CAU");
+    background-size: cover;
+}
+.nav{
+    border-radius: 10px;
+    background-color: rgb(135, 221, 221);
+    height:13vh;
+}
+.orphan-text{
+    margin-top:23px;
+    margin-left:10px;
+    font-weight: 900;
+    color:rgb(25, 103, 125)
+}
+.list{
+    display:flex;
+
+    list-style-type: none;
+    margin-left: 25vw;
+    margin-top:4vh;
+    margin-right:20px;
+    font-weight: 600;
+    
+}
+.list a{
+    color:rgb(9, 9, 9);
+    margin-left:50px;
+    font-size:30px;
+    margin-bottom:10px;
+    font-weight: 800;
+    border-bottom:5px solid transparent;
+    transition:all .55s ease;
+    text-decoration: none;
+}
+.list a:hover{
+    border-bottom: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#0d0c0c;
+}
+.add{
+    text-decoration: none;
+    font-size:60px;
+}
+.add:hover{
+    color:rgb(198, 125, 30);
+}
+.contact{
+    text-decoration: none;
+    margin-left: 2vw;
+    color:rgb(14, 126, 126);
+}
+.search{
+    text-decoration: none;
+    margin-left: 2vw;
+    color:rgb(14, 126, 126);
+}
+.orp-img{
+    height: 60vh;
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 2vh;
+    border-radius: 100px;
+}
+.orp-text{
+    margin-top: 20px;
+    font-weight: 800;
+    font-size:50px;
+    text-align: center;
+    color:rgb(29, 139, 139)
+}
+.orp-para{
+    text-align: center;
+    font-size:25px;
+    font-weight: 900;
+    margin-top: 30px;
+
+}
+.orp-queotes{
+    margin-top:100px;
+    text-align: center;
+    font-style: italic;
+    background-color: rgb(52, 132, 132);
+    color:white;
+    width:30vw;
+    margin-left: 35vw;
+    border-radius: 10px;
+    
+}
+.pay{
+    margin-top: 60px;
+    margin-left:80px;
+}
+.phone{
+    height:30vh;
+    width:30vw;
+    margin-left:10vw;
+    margin-top:10vh;
+}
+.orp-img2{
+    border-radius: 40%;
+    height: 70vh;
+    width:50vw;
+    margin-left: 22vw;
+    margin-top:30px;
+}
+.category{
+    float: left;
+    padding: 10px;
+    margin-left: 35px;
+}
+.categorydiv{
+    width: 20%;
+    border: 1px solid lightgrey;
+    box-shadow: 3px 6px red;
+    height: 300px;
+    border-radius: 10px;
+    float: left;
+    margin: 3% 2%;
+    text-align: center;
+    margin-left: 275px;
+}
+.categorydiv img{
+    width: 100%;
+    border-radius: 10px;
+    height: 60%;
+}
+.categorydiv a{
+    font-size: 20px;
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+.view{
+    background-color: green;
+    color: white;
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    
+ }
+ .view:hover{
+     background-color: indigo;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="nav d-flex flex-row">
+   
+        <img class="nav-img" src="https://th.bing.com/th/id/OIP.PNBxOA65BoeCQwdRfwXMLwHaE8?pid=ImgDet&rs=1">
+        <h2 class="orphan-text">Orphan Care</h2>
+        <div class="list">
+        <a class="add listt" href="add.html">Add</a>
+        <a class="contact listt" href="#">Contact Us</a>
+        <a class="search listt" href="search.html">Search</a>
+    </div>
+    <div class="category" id="category">
+        <div class="categorydiv">
+            <img  src="https://www.loveorphanage.org/wp-content/uploads/2015/01/Logo-with-tagline1.jpg"/>
+            <a >Add Orphanage    Details</a><br/> <br/>
+           <a href="add.html"> <button class="view"> Add</button></a>
+        </div>
+        <div class="categorydiv">
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpdSkgNJk3M5HG1Jband2XCEXg3qUWJ5G6jiSE-3bnHxRM8ptV60rBZqBOHAPamw-mFno&usqp=CAU"/>
+            <a >Search Orphange Home</a><br/> <br/>
+           <a href="search.html"> <button class="view"> Search</button></a>
+        </div>
+    </div>
+    <div class="orphan-img">
+        <img class="orp-img" src="https://i.pinimg.com/236x/8f/ab/40/8fab401192942be3e2c97d5af5b1cbd2--sadness-photography-poverty-photography.jpg">
+        <h4 class="orp-text">So, why do we do this?</h4>
+        <p class="orp-para">Our Organization was established in 2023 for children who left without <br>parental care for various reasons.
+            In that time, we have helped over 5,000 children.<br>
+            This is 5,000 children who have been given a new life.<br>
+            This is 5,000 children who know the Price of Life.</p>
+        <h2 class="orp-queotes">​
+            We can’t help everyone,<br>
+            but everyone  can help someone</h2>
+        <div class="pay d-flex flex-row">
+            <a href="https://www.phonepe.com/"><img class="phone" src="https://www.exchange4media.com/news-photo/103528-phonepe.jpg"></a>
+            <a href="https://paytm.com/"><img class="paytm phone"src="https://techstory.in/wp-content/uploads/2017/11/paytm-1.jpg"></a>
+        </div>
+        <img class="orp-img2" src="https://th.bing.com/th/id/OIP.oqg-R6kmQ1rDJbmQFBbk4wHaFC?pid=ImgDet&rs=1">
+        <h4 class="orp-text">Can life be changed?</h4>
+        <p class="orp-para "> I know people who organize meetings with their friends and <br>go to clean the garbage from beaches and forests.  I know those who<br> save hundreds of homeless animals every day.  There are also those who care about lonely old people.<br>  These are all very good people.  We do not notice when they do this, but <br>we know that without them it would be much worse.
+        </p>
+        <p class="orp-para">As well as we are changing life on our Earth for the better.  Children that no one needed became part<br> of our family.  We teach them to love animals, not to litter around themselves, as well as our children <br>take care of the elderly in the area where they live.</p>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>

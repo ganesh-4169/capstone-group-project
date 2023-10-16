@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Login</title>
+</head>
+<script src="https://kit.fontawesome.com/41c529dfe7.js" crossorigin="anonymous"></script>
+<style>
+   body{
+    background-image: url('https://thumbs.dreamstime.com/z/upset-child-watching-house-shadow-homeless-kid-dreaming-home-family-stock-photo-149318640.jpg');
+
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.one{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+.two{
+    position: relative;
+    width: 400px;
+    heigth: 550px;
+    border: 2px solid rgba(255,255,2550.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two h1{
+    color: blue;
+    text-align: center;
+    font-size: 32px;
+}
+.two .three{
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid red;
+}
+.two .three input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 20px 0 5px;
+    color: rgb(19, 28, 200);
+    font-size: 16px;
+}
+i{
+    position: relative;
+    color: rgb(54, 17, 217);
+    top: 13px;
+    left: 300px;
+    
+}
+.seven input{
+    color: black;
+    background: blue;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 3px 0 10px rgba(0,0,0,.5);
+}
+#result{
+color: red;
+font-weight: 600;
+position: relative;
+top: 25px;
+}
+::placeholder{
+    color: black;
+}
+</style>
+<body>
+<div class="one">
+    <div class="two">
+    <form method="post" action="/loginSubmit"  name="Formfill" onsubmit="return validation()">
+    <h1>  Log in page </h1>
+
+    <div class="three">
+        <i class="fa-solid fa-envelope"></i>
+        <input  id="usemail" type="email"  name="email" placeholder="email">
+    </div>
+    <div  id="uspassword" class="three">
+        <i class="fa-solid fa-lock"></i>
+        <input  type="password"  name="password" placeholder="password">
+    </div>
+    <div class="seven">
+        <input type="submit"  value="Register">
+    </div>
+     </form>
+    </div>
+</div>
+<script src="stylesheet.css"></script>
+</body>
+</html>
